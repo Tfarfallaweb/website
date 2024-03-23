@@ -48,9 +48,9 @@ let lastWidth = 45
         style={{transform: `${setTransform()}`, pointerEvents: "auto"}}
       drag
       whileInView={{ opacity: 1 }}
-      dragElastic={0}
+      // dragElastic={0}
       className="imgs"
-      dragMomentum={false}
+      // dragMomentum={false}
       transition={{ duration: 0.6, delay: 0 }}
       initial={{ x: 0, y: 0, opacity: 0 }}
       // dragConstraints={ref}
