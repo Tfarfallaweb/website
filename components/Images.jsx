@@ -41,10 +41,11 @@ let lastWidth
 
     return data.map((image, index) => (
       <motion.div
-      style={{transform: `${setTransform()}`}}
-      drag
+      style={{transform: `${setTransform()}`, pointerEvents: "none"}}
+      // drag
       className="imgcover">
         <motion.img
+        style={{transform: `${setTransform()}`, pointerEvents: "auto"}}
       drag
       whileInView={{ opacity: 1 }}
       dragElastic={0}
