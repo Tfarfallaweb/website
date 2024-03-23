@@ -10,9 +10,16 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto Mono", monospace;
+  /* border: 2px solid greenyellow; */
 }
 
+html{
+  overflow-x: hidden;
+}
+
+
 body {
+  width: 100vw;
   overflow-x: hidden;
   background-color: black;
   color: white;
@@ -46,7 +53,7 @@ ul li a {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   padding: 30px;
   justify-content: space-between;
 }
@@ -73,9 +80,9 @@ ul li a {
   transition: all 0.3s ease; /* Smooth transition */
 }
 
-.text {
+.text p{
   opacity: 0%;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   position: fixed;
   z-index: 999999999999999;
@@ -86,12 +93,12 @@ ul li a {
   text-transform: uppercase;
   background-color: rgb(208, 25, 25);
   color: black;
-  font-size: 47px;
+  font-size: 40px;
   transition: opacity 0.8s ease-in-out; /* Smooth transition */
   pointer-events: none;
 }
 
-.plus:hover + .text {
+.plus:hover + .text p{
   opacity: 100%;
 }
 
@@ -101,6 +108,7 @@ ul li a {
   align-items: center;
   flex-direction: column;
   margin: 0;
+  height: 100vh;
 }
 
 .maindiv {
@@ -108,5 +116,15 @@ ul li a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+
+
+@media screen and (max-width: 480px){
+  .text p{
+    font-size: 24px;
+    height: 100%;
+    padding: 10px;
+  }
 }
 

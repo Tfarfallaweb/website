@@ -20,11 +20,11 @@ const Images = () => {
     
   }, []);
 
-let lastWidth
+let lastWidth = 45
   
   const setWidth = () =>{
-    lastWidth = `${30 + Math.random() * 30}%`
-    return lastWidth
+    lastWidth = `${40 + Math.random() * 40}%`
+    // return lastWidth
   }
 
   const setTransform = () =>{
@@ -33,7 +33,7 @@ let lastWidth
     console.log(`translateX(${ranx}) translateY(${rany})`)
     return `translateX(${ranx}%) translateY(${rany}%)`
   }
-
+  setWidth()
   const addImages = () => {
     if (!data) {
       return null; // Return null if data is not available yet
@@ -41,8 +41,8 @@ let lastWidth
 
     return data.map((image, index) => (
       <motion.div
-      style={{transform: `${setTransform()}`, pointerEvents: "none"}}
-      // drag
+      style={{transform: `${setTransform()}`, pointerEvents: "none", width: `${lastWidth}`}}
+      drag
       className="imgcover">
         <motion.img
         style={{transform: `${setTransform()}`, pointerEvents: "auto"}}
@@ -55,10 +55,11 @@ let lastWidth
       initial={{ x: 0, y: 0, opacity: 0 }}
       dragConstraints={ref}
       key={index}
-      width={setWidth()}
+      width={lastWidth}
       src={image.src}
       alt={image.alt}
     />
+    {setWidth()}
       </motion.div>
     
     
