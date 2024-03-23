@@ -8,7 +8,7 @@ const Images = () => {
   const ref = useRef();
   useEffect(() => {
     const fetchData = async () => {
-      let res = await fetch("http://localhost:3000/api");
+      let res = await fetch("/api");
       res = await res.json();
       setData(res.shuffledArray);
       console.log(res.shuffledArray);
