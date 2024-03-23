@@ -15,7 +15,7 @@ const Images = () => {
     };
     console.log(`translate(${Math.floor(Math.random() * 100)}px, ${Math.floor(Math.random() * 100)}px)`)
     fetchData();
-
+ 
     
     
   }, []);
