@@ -19,7 +19,7 @@ const Images = () => {
   let lastWidth = 45;
 
   const setWidth = () => {
-    lastWidth = `${70 + Math.random() * 15}%`;
+    lastWidth = `${60 + Math.random() * 15}%`;
   };
 
   const setTransform = () => {
@@ -47,9 +47,7 @@ const Images = () => {
           style={{ transform: `${setTransform()}`, pointerEvents: "auto" }}
           drag
           whileInView={{ opacity: 1 }}
-          dragElastic={0}
           className="imgs"
-          dragMomentum={false}
           transition={{ duration: 0.6, delay: 0 }}
           initial={{ x: 0, y: 0, opacity: 0 }}
           whileDrag={{ scale: 1.2 }}
