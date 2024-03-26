@@ -19,7 +19,7 @@ const Images = () => {
   let lastWidth = 45;
 
   const setWidth = () => {
-    lastWidth = `${60 + Math.random() * 15}%`;
+    lastWidth = `${40 + Math.random() * 15}%`;
   };
 
   const setTransform = () => {
