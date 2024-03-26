@@ -24,7 +24,7 @@ const Images = () => {
 
   const setTransform = () => {
     let ranx = Math.floor(Math.random() * 40);
-    let rany = Math.floor(Math.random() * 100);
+    let rany = Math.floor(Math.random() * 70);
     return `translateX(${ranx}%) translateY(${rany}%)`;
   };
   setWidth();
