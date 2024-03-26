@@ -30,12 +30,7 @@ const Nav = () => {
       </motion.div>
       <div className={`text`}>
         <p className={`${open ? "open" : "close"}`}>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque
-          minus eos distinctio incidunt ratione quibusdam delectus mollitia,
-          aliquam maxime rerum obcaecati autem eveniet similique repellendus
-          nemo tempore deserunt vero unde id corrupti iste nihil. Ad unde illum
-          expedita exercitationem laboriosam impedit, voluptatum sint veniam
-          molestiae, vitae doloremque laudantium.
+          Tony Farfalla is a multi-disciplinary artist, anthropologist and creative collaborator exploring the subtle space between form and feeling. <br/> Contact: <a href="mailto:tonyfarfalla@gmail.com">tonyfarfalla@gmail.com</a> <br/> Instagram: <a href="https://www.instagram.com/tony_farfalla">@tony_farfalla</a>
         </p>
       </div>
     </>
