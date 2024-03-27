@@ -3,7 +3,7 @@ import fs from 'fs';
 
 
 export async function GET(request) {
-
+ 
 
     try {
         const folderPath = './public/img';
