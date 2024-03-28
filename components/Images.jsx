@@ -4,17 +4,25 @@ import { motion } from "framer-motion";
 import React, { useRef, useEffect, useState } from "react";
 
 const Images = () => {
-  const [data, setData] = useState();
+  const [data, setData] = useState([]);
   const ref = useRef();
 
   useEffect(() => {
     const fetchData = async () => {
       let res = await fetch("/api");
       res = await res.json();
-      setData(res.shuffledArray);
+      shuffleArray(res.shuffledArray);
     };
     fetchData();
   }, []);
+
+  const shuffleArray = (array) => {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    setData(array);
+  };
 
   let lastWidth = 45;
 
@@ -69,3 +77,4 @@ const Images = () => {
 };
 
 export default Images;
+
