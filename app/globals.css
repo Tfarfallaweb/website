@@ -102,8 +102,7 @@ ul li a {
   background-color: rgb(208, 25, 25);
   color: black;
   font-size: 30px;
-  transition: opacity 0.8s ease-in-out; /* Smooth transition */
-  pointer-events: none;
+  transition: opacity 0.8s ease-in-out; 
 }
 
 .close{
