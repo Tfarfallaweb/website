@@ -19,7 +19,7 @@ const Nav = () => {
         transition={{ duration: 0.5 }}
         className="nav"
       >
-        <div className="left"><a href="#" >TONY FARFALLA</a></div>
+        <div className="left"><a href="https://tonyfarfalla.com/" >TONY FARFALLA</a></div>
         <div className="right">
           
             <button onClick={() => handleClick()} className="info">
