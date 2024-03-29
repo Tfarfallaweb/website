@@ -29,7 +29,7 @@ const Nav = () => {
         </div>
       </motion.div>
       <div className={`text`}>
-        <p className={`${open ? "open" : "close"}`}>
+        <p className={`${open ? "open pointer-events-auto" : "close pointer-events-none"}`}>
           Tony Farfalla is a multi-disciplinary artist, anthropologist and creative collaborator exploring the subtle space between form and feeling. <br/> Contact: <a href="mailto:tonyfarfalla@gmail.com">tonyfarfalla@gmail.com</a> <br/> Instagram: <a href="https://www.instagram.com/tony_farfalla">@tony_farfalla</a>
         </p>
       </div>
