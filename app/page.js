@@ -7,7 +7,7 @@ const Home = () => {
   
 
   return (
-    <div>
+    <div className="cursor-move">
       <HomeComp/>
       
       <Images/>
