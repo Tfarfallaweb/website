@@ -45,7 +45,7 @@ body {
 }
 
 .images {
-  cursor: pointer;
+  cursor: move;
 }
 
 .main {
